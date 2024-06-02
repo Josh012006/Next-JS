@@ -5,7 +5,7 @@ import Image from "next/image";
 function Project ({children, src, title, projectLink} : {children: React.ReactNode, src:string, title:string, projectLink:string}) {
 
     return (
-        <div className="project flex-col items-center hidden my-10 lg:mx-28" style={{minHeight: '450px'}}>
+        <div className="project flex-col items-center flex my-10 lg:mx-28" style={{minHeight: '450px'}}>
             <h3 className="text-center text-2xl m-4">{title}</h3>
             <div className="grid grid-cols-2 items-center">
                 <div className="text-justify col-span-2 lg:col-span-1 p-6">
