@@ -25,6 +25,8 @@ function Contact () {
             },
             body: JSON.stringify({mail: mail, message: message})
         })
+
+        alert(res);
     }
 
     return(
