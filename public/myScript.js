@@ -17,11 +17,9 @@ for(let element of images) {
 
         for(let i in projects) {
             if(i != (num - 1)) {
-                console.log(projects[i])
                 if(projects[i].classList) {
                     if(projects[i].classList.contains('flex')) {
                         projects[i].classList.remove('flex');
-                        console.log(projects[i].classList)
                     }
                     projects[i].classList.add('hidden');
                 }

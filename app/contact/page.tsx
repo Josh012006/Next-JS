@@ -18,7 +18,7 @@ function Contact () {
     const handleSubmit = async (e : FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        const res = await fetcher('/route', {
+        const res = await fetcher('/', {
             method:'POST',
             headers: {
                 'Content-Type': 'application/json'
