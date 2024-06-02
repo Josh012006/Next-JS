@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-color: 255, 255, 255;
+    --layout-component: 0, 0, 20;
+    --minimalist-grey: 234, 234, 234;
+    --dark-blue: 6, 20, 32;
+  }
+}
+
+body {
+  color: rgb(var(--font-color));
+  background: linear-gradient(to right, #000b14, #041a2f, #364b67);
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+header, footer {
+  background-color: rgb(var(--layout-component));
+  font-weight: bold;
+}
+
+header {
+  box-shadow: 20px -20px 30px 10px inset #041a2f;
+}
+
+main {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+#home {
+  position: relative;
+
+  background: linear-gradient(to bottom, transparent, rgba(0, 11, 20, 0.5),rgba(4, 26, 47, 0.5),rgba(54, 75, 103, 0.5)), url("/homeBackground.jpg") no-repeat center center;
+  background-size: cover;
+
+  box-shadow: 20px 20px 30px 30px #041a2f;
+
+  transform: skewY(-2deg); /* Ajustez l'angle selon vos besoins */
+  transform-origin: bottom left;
+}
+
+.overlaying {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(0, 11, 20, 0.5),rgba(0, 0, 0, 0.5), rgba(54, 75, 103, 0.5));
+}
+
+
+
+
+#about {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('/about.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  box-shadow: 20px 20px 30px 30px #041a2f;
+}
+
+#profile {
+  background-image: linear-gradient(to top, transparent, rgba(0, 11, 20, 0.4),rgba(4, 26, 47, 0.2)), url('/profile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 20px 20px 20px 30px rgba(4, 26, 47, 0.2);
+}
+
+#presentation {
+  background: linear-gradient(to top, transparent, rgba(0, 11, 20, 0.4),rgba(4, 26, 47, 0.2));
+}
+
+
+
+
+
+
+#skills {
+  background: linear-gradient(to bottom, transparent, rgba(0, 11, 20, 0.8),rgba(4, 26, 47, 0.8)), url('/skills2.png'), url('/skills.jpg') no-repeat center center;
+
+  box-shadow: 20px 20px 30px 30px inset #041a2f;
+}
+
+.image {
+  filter: drop-shadow(0 0 40px rgba(0, 123, 255, 0.8));
+}
+
+
+
+
+
+#gallery {
+  display: flex;
+  height: 20rem;
+  gap: 1rem;
+
+  max-width: 60%;
+}
+
+.gal {
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+
+  min-width: 4vw;
+}
+
+.gal:hover {
+  flex: 5;
+}
+
+
+
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
