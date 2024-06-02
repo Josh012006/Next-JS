@@ -126,9 +126,23 @@ main {
   flex: 5;
 }
 
+
+
+
+#contactForm {
+  width: 400px;
+}
+
+
+
+
 @media screen and (max-width: 992px) {
   .gal {
     border-radius: 0rem;
+  }
+
+  #contactForm {
+    width: 300px;
   }
 }
 

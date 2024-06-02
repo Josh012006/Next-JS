@@ -36,7 +36,7 @@ function Contact () {
         <>
             <section className="pt-5 flex flex-col items-center">
                 <h2 className={`text-4xl font-bold text-center mt-4 ${font.className}`}>Let's Get in Touch</h2>
-                <form id="contactForm" onSubmit={handleSubmit} className="flex flex-col justify-around" style={{width: '400px'}}>
+                <form id="contactForm" onSubmit={handleSubmit} className="flex flex-col justify-around">
                     <label htmlFor="mail" className="mt-5 ml-5 mb-3">Email</label>
                     <input id="mail" type='text' required placeholder="example@gmail.com" value={mail} onChange={(e) => {setMail(e.target.value)}} className="rounded-lg h-16 p-3 border-4 border-slate-900 text-black"  />
                     <label htmlFor="message" className="mt-5 ml-5 mb-3">Message</label>
