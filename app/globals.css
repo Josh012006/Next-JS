@@ -137,12 +137,15 @@ main {
 
 
 @media screen and (max-width: 992px) {
-  .gal {
-    border-radius: 0rem;
-  }
 
   #contactForm {
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gal {
+    border-radius: 0rem;
   }
 }
 
