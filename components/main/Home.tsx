@@ -13,7 +13,7 @@ function Home () {
                     <p className={`${font.className}`} style={{letterSpacing:"2px", fontSize: '64px', lineHeight: '60px'}}>JOSUÉ MONGAN</p>
                     <p className="mt-3" style={{fontSize: '20px'}}>PASSIONATE MERN STACK DEVELOPER AND C++ DEVELOPER</p>
                 </div>
-                <a className="rounded-lg p-2 bg-slate-700 m-4 w-44" href="/J_Mongan CV.pdf">Download Resume <i className="fa-solid fa-download" aria-hidden="true"></i></a>
+                <a className="rounded-lg p-2 bg-slate-700 m-4 w-44" href="/J_Mongan CV.pdf" target="_blank">Download Resume <i className="fa-solid fa-download" aria-hidden="true"></i></a>
                 <div className="m-4">
                     <a href="https://github.com/Josh012006" target="_blank"><i className="fa-brands fa-github m-2" aria-hidden="true"></i></a>
                     <a href="https://www.linkedin.com/in/josu%C3%A9-mongan-a7b6242b8/" target="_blank"><i className="fa-brands fa-linkedin m-2" aria-hidden="true"></i></a>

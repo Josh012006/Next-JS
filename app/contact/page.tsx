@@ -27,6 +27,9 @@ function Contact () {
         })
 
         alert(res);
+
+        setMail('');
+        setMessage('');
     }
 
     return(
