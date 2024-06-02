@@ -126,6 +126,11 @@ main {
   flex: 5;
 }
 
+@media screen and (max-width: 992px) {
+  .gal {
+    border-radius: 0rem;
+  }
+}
 
 
 
