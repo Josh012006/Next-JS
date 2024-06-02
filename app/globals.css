@@ -3,19 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --font-color: 255, 255, 255;
+  --layout-component: 0, 0, 20;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --font-color: 255, 255, 255;
-    --layout-component: 0, 0, 20;
-    --minimalist-grey: 234, 234, 234;
-    --dark-blue: 6, 20, 32;
-  }
-}
 
 body {
   color: rgb(var(--font-color));
