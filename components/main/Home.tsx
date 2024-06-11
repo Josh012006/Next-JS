@@ -11,7 +11,7 @@ function Home () {
                 <div className="m-4 mb-7 flex flex-col justify-center">
                     <p className="mb-3">Hello there, I'm</p>
                     <p className={`${font.className}`} style={{letterSpacing:"2px", fontSize: '64px', lineHeight: '60px'}}>JOSUÉ MONGAN</p>
-                    <p className="mt-3" style={{fontSize: '20px'}}>PASSIONATE MERN STACK DEVELOPER AND C++ DEVELOPER</p>
+                    <p className="mt-3" style={{fontSize: '20px'}}>PASSIONATE MERN STACK DEVELOPER AND SELF-TAUGHT C++ DEVELOPER</p>
                 </div>
                 <a className="rounded-lg p-2 bg-slate-700 m-4 w-44" href="/J_Mongan CV.pdf" target="_blank">Download Resume <i className="fa-solid fa-download" aria-hidden="true"></i></a>
                 <div className="m-4">
