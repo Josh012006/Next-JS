@@ -1,3 +1,6 @@
+"use client"
+
+import { useAppSelector } from "@/redux/store";
 import { Merriweather } from "next/font/google";
 
 
@@ -6,8 +9,19 @@ const font = Merriweather({ subsets: ["latin"], weight: '400' });
 
 
 function About () {
+
+    const theme = useAppSelector((state) => state.theme.theme);
+
+    const style = (theme === "dark") ?  {
+        backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('/about.jpg')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+
+        boxShadow: "20px 20px 30px 30px #041a2f",
+    } : {};
+
     return(
-        <section id="about" className="pt-5">
+        <section id="about" className={(theme === "dark") ? "pt-5" : "pt-5 bg-slate-200 text-black"} style ={style}>
             <h2 className={`text-4xl font-bold text-center mt-4 ${font.className}`}>About me</h2>
             <div className="grid grid-cols-5">
                 <div id="profile" className="col-span-5 pt-28 lg:col-span-2 min-h-96"></div>

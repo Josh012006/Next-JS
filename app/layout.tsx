@@ -3,6 +3,11 @@ import "./globals.css";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Main from "@/components/Main";
+import GoUp from "@/components/GoUp";
+import ReduxProvider from "@/redux/Provider";
+import ThemeChanger from "@/components/ThemeChanger";
+
 
 
 
@@ -20,14 +25,18 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href= "/logo.png" sizes="16x16" />
-        <script src="https://kit.fontawesome.com/f1ed3a95ea.js" crossOrigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/f1ed3a95ea.js" crossOrigin="anonymous" defer></script>
       </head>
-      <body>
-        <Header />
-        <main style={{minHeight: '604px'}} className="flex flex-col justify-between">
-          {children}
-        </main>
-        <Footer />
+      <body className="relative">
+        <ReduxProvider>
+          <Header />
+          <Main>
+            {children}
+          </Main>
+          <ThemeChanger />
+          <GoUp />
+          <Footer />
+        </ReduxProvider>
       </body>
     </html>
   );
