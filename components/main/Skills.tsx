@@ -26,6 +26,7 @@ function Skills () {
     };
 
     const express = (theme === "dark") ? "express-white" : "express";
+    const borderColor = (theme === "dark") ? "white" : "black";
 
     return(
         <>
@@ -45,20 +46,20 @@ function Skills () {
                     </div>
                 </div>
             </section>
-            <section className="p-10">
+            <section className="py-10 lg:px-10">
                 <p className="text-center">Throughout my formation, I've acquired many hard and soft skills.</p>
                 <div className="p-4">
                     <div>
                         <h2 className="font-bold text-xl text-center my-4 underline">My hard skills 🛠️ include:</h2>
                         <ul className="flex flex-col">
-                            <li className="grid grid-cols-2 m-3 items-center justify-items-center border lg:border-0 rounded-lg p-3">
+                            <li className={`grid grid-cols-2 m-3 items-center justify-items-center border border-${borderColor} lg:border-0 rounded-lg p-3`}>
                                 <p className="col-span-2 lg:col-span-1 text-center">Systems Programming languages</p>
                                 <div className="flex items-center col-span-2 lg:col-span-1">
                                     <Image alt="C++" src='/languages/cpp.png' width='60' height="60"  className="m-3 image" />
                                     <Image alt="C" src='/languages/c.png' width='50' height="50"  className="m-3 image" />
                                 </div>
                             </li>
-                            <li className="grid grid-cols-2 m-3 items-center justify-items-center border lg:border-0 rounded-lg p-3">
+                            <li className={`grid grid-cols-2 m-3 items-center justify-items-center border border-${borderColor} lg:border-0 rounded-lg p-3`}>
                                 <div className="items-center col-span-2 lg:col-span-1 grid grid-cols-2 lg:grid-cols-4">
                                     <Image alt="HTML" src='/languages/html.png' width='50' height="50"  className="m-3 image" />
                                     <Image alt="CSS" src='/languages/css.png' width='50' height="50"  className="m-3 image" />
@@ -67,14 +68,14 @@ function Skills () {
                                 </div>
                                 <p className="col-span-2 lg:col-span-1 text-center">Web programming languages</p>
                             </li>
-                            <li className="grid grid-cols-2 m-3 items-center justify-items-center border lg:border-0 rounded-lg p-3">
+                            <li className={`grid grid-cols-2 m-3 items-center justify-items-center border border-${borderColor} lg:border-0 rounded-lg p-3`}>
                                 <div className="flex items-center col-span-2 lg:col-span-1 image">
                                     <Image alt="MySQL" src={`/languages/${mysql}.png`} width='50' height="50" className="m-3 image" />
                                     <Image alt="MongoDB" src='/languages/mongodb.png' width='100' height="100" className="m-3 image" />
                                 </div>
                                 <p className="col-span-2 lg:col-span-1 text-center">Databases</p>
                             </li>
-                            <li className="grid grid-cols-2 m-3 items-center justify-items-center border lg:border-0 rounded-lg p-3">
+                            <li className={`grid grid-cols-2 m-3 items-center justify-items-center border border-${borderColor} lg:border-0 rounded-lg p-3`}>
                                 <p className="col-span-2 lg:col-span-1 text-center">Web development frameworks</p>
                                 <div className="items-center col-span-2 lg:col-span-1 image grid grid-cols-3 lg:grid-cols-5">
                                     <Image alt="React" src='/languages/react.png' width='50' height="50" className="m-3 image" />
@@ -84,7 +85,7 @@ function Skills () {
                                     <Image alt="Express" src='/languages/express.png' width='50' height="50" className="m-3 image" />
                                 </div>
                             </li>
-                            <li className="grid grid-cols-2 m-3 items-center justify-items-center border lg:border-0 rounded-lg p-3">
+                            <li className={`grid grid-cols-2 m-3 items-center justify-items-center border border-${borderColor} lg:border-0 rounded-lg p-3`}>
                                 <p className="col-span-2 lg:col-span-1 text-center">Tools and Others</p>
                                 <div className="items-center col-span-2 lg:col-span-1 image grid grid-cols-4 lg:grid-cols-5">
                                     <Image alt="SASS" src='/languages/sass.png' width='50' height="50" className="m-3 image" />
@@ -105,14 +106,14 @@ function Skills () {
                     <div>
                         <h2 className="font-bold text-xl text-center my-4 underline">My soft skills 🤝 include:</h2>
                         <ul className="flex flex-col">
-                            <li className="grid grid-cols-2 m-3 items-center justify-items-center border lg:border-0 rounded-lg p-3">
+                            <li className={`grid grid-cols-2 m-3 items-center justify-items-center border border-${borderColor} lg:border-0 rounded-lg p-3`}>
                                 <p className="col-span-2 lg:col-span-1 text-center">Teamwork</p>
                                 <div className="flex items-center col-span-2 lg:col-span-1">
                                     <Image alt="Teamwork" src='/softSkills/teamwork.png' width='60' height="60"  className="m-3 image" />
                                     <Image alt="SCRUM" src='/softSkills/scrum.png' width='50' height="50"  className="m-3 image" />
                                 </div>
                             </li>
-                            <li className="grid grid-cols-2 m-3 items-center justify-items-center border lg:border-0 rounded-lg p-3">
+                            <li className={`grid grid-cols-2 m-3 items-center justify-items-center border border-${borderColor} lg:border-0 rounded-lg p-3`}>
                                 <div className="items-center col-span-2 lg:col-span-1 grid grid-cols-2 lg:grid-cols-4">
                                     <Image alt="Communication" src='/softSkills/communication.png' width='50' height="50"  className="m-3 image" />
                                     <Image alt="Problem Solving" src='/softSkills/problemSolving.png' width='50' height="50"  className="m-3 image" />
@@ -121,7 +122,7 @@ function Skills () {
                                 </div>
                                 <p className="col-span-2 lg:col-span-1 text-center">Communication, Problem Solving, Adaptability, Time Management</p>
                             </li>
-                            <li className="grid grid-cols-2 m-3 items-center justify-items-center border lg:border-0 rounded-lg p-3">
+                            <li className={`grid grid-cols-2 m-3 items-center justify-items-center border border-${borderColor} lg:border-0 rounded-lg p-3`}>
                                 <div className="flex items-center col-span-2 lg:col-span-1 image">
                                     <Image alt="Leadership" src='/softSkills/leadership.png' width='50' height="50" className="m-3 image" />
                                     <Image alt="Creativity" src='/softSkills/creativity.png' width='50' height="50" className="m-3 image" />

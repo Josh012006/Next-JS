@@ -16,15 +16,21 @@ function About () {
         backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('/about.jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
 
         boxShadow: "20px 20px 30px 30px #041a2f",
-    } : {};
+    } : {
+        backgroundImage: "linear-gradient(to right, rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.2)), url('/aboutwhite.png')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+    };
 
     return(
         <section id="about" className={(theme === "dark") ? "pt-5" : "pt-5 bg-slate-200 text-black"} style ={style}>
             <h2 className={`text-4xl font-bold text-center mt-4 ${font.className}`}>About me</h2>
             <div className="grid grid-cols-5">
-                <div id="profile" className="col-span-5 pt-28 lg:col-span-2 min-h-96"></div>
+                <div id="profile" className="col-span-5 pt-28 lg:col-span-2" style = {{minHeight: "450px"}}></div>
                 <div id="presentation" className="text-justify col-span-5 lg:col-span-3 px-6 flex flex-col justify-center">
                     <p className="m-3">
                         Hi, I'm Josué Mongan, a passionate and dedicated MERN full-stack web developer and

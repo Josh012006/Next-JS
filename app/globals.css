@@ -50,6 +50,7 @@ main {
   background-image: url('/profile.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 #about {
@@ -59,14 +60,6 @@ main {
 
 
 
-
-
-
-
-
-#skills {
-  
-}
 
 .image {
   filter: drop-shadow(0 0 40px rgba(0, 123, 255, 1));
@@ -169,7 +162,7 @@ main {
 
   #gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     justify-items: center;
     justify-content: center;
