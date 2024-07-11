@@ -19,6 +19,7 @@ function Projects () {
 
     const express = (theme === "dark") ? "express-white" : "express";
     const mysql = (theme === "dark") ? "mysql" : "mysql-black";
+    const nextjs = (theme === "dark") ? "nextjs" : "nextjs-black";
 
     return(
         <section id="projects" className={(theme === "dark") ? "pt-5 flex flex-col justify-center relative" : "pt-5 flex flex-col justify-center relative bg-slate-200 text-black"}>
@@ -58,6 +59,7 @@ function Projects () {
                         <div id="4" className="gal" style={{backgroundImage: "url('/projects/gallery/g4.png')"}} onClick={() => setToShow(4)}></div>
                         <div id="5" className="gal" style={{backgroundImage: "url('/projects/gallery/g5.png')"}} onClick={() => setToShow(5)}></div>
                         <div id="6" className="gal" style={{backgroundImage: "url('/projects/gallery/g6.png')"}} onClick={() => setToShow(6)}></div>
+                        <div id="7" className="gal" style={{backgroundImage: "url('/projects/gallery/g7.png')"}} onClick={() => setToShow(7)}></div>
                     </div>
                 </div>
                 <div id="myProjects" className="flex flex-col items-center justify-around">
@@ -170,6 +172,27 @@ function Projects () {
                             <Image alt="MongoDB" src='/languages/mongodb.png' width='100' height="100"  className="m-3 image" />
                             <Image alt="Typescript" src='/languages/typescript.png' width='50' height="50"  className="m-3 image" />
                             <Image alt="Vite" src='/languages/vite.png' width='50' height="50"  className="m-3 image" />
+                            <Image alt="TailwindCSS" src='/languages/tailwindcss.png' width='50' height="50"  className="m-3 image" />
+                        </div>
+                    </Project>}
+                    {toShow == 7 && <Project src='/projects/appointment.mp4' title="Appointment App" projectLink="https://github.com/Josh012006/Appointment-App">
+                        A simple appointment app made with Next.js and TailwindCSS. It's the greatest project I've worked on till now.
+                        <br />
+                        <br />
+                        This web app is fully made with Next.js. I've used Mongoose to connect to my MongoDB database and to define appointments and users' schemas.
+                        I've used TailwindCSS for the style. On the app, as a patient you can requests appointments and keep track of the responses. As a secretary, you can see the requests and give an answer that is an appointment.
+                        The doctor just has to see the appointments and the patients' informations.
+                        <br />
+                        <br />
+                        The part where I struggled the most is the management of the security and the restrictions on the app. It was really challenging to imagine all the cases and the possibilities to try to avoid disorder and attacks.
+                        <br />
+                        <br />
+                        <div className="grid grid-cols-3 image">
+                            <Image alt="Nextjs" src={`/languages/${nextjs}.png`} width="70" height="70" className="m-3 image" />
+                            <Image alt="React" src='/languages/react.png' width='50' height="50"  className="m-3 image" />
+                            <Image alt="Express" src={`/languages/${express}.png`} width='70' height="50"  className="m-3 image" />
+                            <Image alt="MongoDB" src='/languages/mongodb.png' width='100' height="100"  className="m-3 image" />
+                            <Image alt="Typescript" src='/languages/typescript.png' width='50' height="50"  className="m-3 image" />
                             <Image alt="TailwindCSS" src='/languages/tailwindcss.png' width='50' height="50"  className="m-3 image" />
                         </div>
                     </Project>}
