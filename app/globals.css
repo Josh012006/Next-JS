@@ -71,7 +71,7 @@ main {
 
 #gallery {
   display: flex;
-  height: 20rem;
+  min-height: 20rem;
   gap: 1rem;
 
   max-width: 60%;

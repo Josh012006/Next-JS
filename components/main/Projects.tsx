@@ -51,7 +51,7 @@ function Projects () {
             <img alt="usedLanguages" src='https://github-readme-stats.vercel.app/api/top-langs/?username=Josh012006&langs_count=10&text_color=000000&bg_color=FFEADE&title_color=3A0603&layout=compact&border_color=F09B59' width='350' height="350" className="m-3 self-center" />
             <h3 className="text-center text-2xl my-8 font-bold">Click on an image to see the project!</h3>
             <div className="flex flex-col justify-center">
-                <div className="lg:pl-96 sm:pl-48 pl-24">
+                <div className="lg:pl-96 sm:pl-48 pl-24 my-16">
                     <div id="gallery">
                         <div id="1" className="gal" style={{backgroundImage: "url('/projects/gallery/g1.png')"}} onClick={() => setToShow(1)}></div>
                         <div id="2" className="gal" style={{backgroundImage: "url('/projects/gallery/g2.png')"}} onClick={() => setToShow(2)}></div>
