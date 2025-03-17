@@ -106,7 +106,7 @@ main {
       width: 0;
   }
   100% {
-      width: 100%;
+      width: 100px;
   }
 }
 
@@ -132,7 +132,7 @@ main {
   border-right: 2px solid rgba(255, 255, 255, 0.75); /* Couleur du curseur */
   animation: typewriter 4s steps(40, end) 1s 1 normal both,
               blinkCursor 500ms steps(40, end) 5s both;
-  max-width: 100%;
+  max-width: 100px;
   width: 0; /* Start with 0 width and animate to 100% */
 }
 
